@@ -1,9 +1,18 @@
-function h = initVideo()
+function [ h , vid ] = initVideo( options )
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
 
 addpath('circular cut');
 addpath('neural funcs');
+vid = videoinput('winvideo',1,'MJPG_1280x1024');
+set(vid,'TriggerRepeat',Inf);
+vid.FrameGrabInterval = options.FrameGrabInterval;
+set(vid,'ReturnedColorSpace','rgb');
+set(vid,'FramesPerTrigger', 1000);
+%set(gcf, 'Units', 'Normalized', 'Position',[0.8 0.8 1 1]);
+%live = subplot(1,1,1);title(live,'Online video Steaming');figure;
+
+set(gcf, 'Units', 'Normalized', 'Position',[0 0 1 1]);
 h = [];
 h(1) = subplot(2,2,1);
 h(2) = subplot(2,2,2);
