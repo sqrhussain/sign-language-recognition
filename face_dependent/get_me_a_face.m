@@ -11,7 +11,7 @@ rgb = imfilter(rgb,filter);
     if size(bboxes,1)*size(bboxes,2) == 0
         error('No face found');
     end
-    orig_facebox = elect_face(bboxes);
+    orig_facebox = elect_face(bboxes,rgb);
     facebox = orig_facebox;
     facebox = shrink_face_box(facebox);
     
