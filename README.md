@@ -1,5 +1,6 @@
 # sign-language-recognition
-Sign language recognition project repository
+Graduation Project, Faculty of Informatics Engineering, Al-Baath University
+Year 2015-2016
 
 - './circular cut' contatins the .m files to detect hand centroid and fingertips and extract this information as features of the image
 - './neural funcs' NN functions [to be edited]
