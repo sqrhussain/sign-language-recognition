@@ -1,5 +1,5 @@
 # sign-language-recognition
-Graduation Project, Faculty of Informatics Engineering, Al-Baath University
+Bachelor's Thesis Project, Faculty of Informatics Engineering, Al-Baath University
 Year 2015-2016
 
 ## Hierarchy
@@ -7,9 +7,6 @@ Year 2015-2016
 - `./neural funcs` NN functions [to be edited]
 - `/read funcs` will not run without data (which is not present in this repository for now)
 - `./SignRecognizer.m` is the main program currently
-
-## Context
-This project was presented as a study for bachelor's degree at Al-Baath University, Syria
 
 ## Authors
 - Majd Akleh
